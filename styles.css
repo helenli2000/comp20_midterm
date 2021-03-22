@@ -7,7 +7,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #a7e9d2;
+    background-color: #f5e190;
     width: 100%;
 }
   
@@ -23,25 +23,25 @@
 }
   
 .navbar a:hover {
-    background: #f2f2f2;
+    background: #ffce0a;
     color: black;
 }
 
 .footer{
-    background-color:#a7e9d2;
+    background-color:#f5e190;
     color:#f2f2f2;
-    height: 300px;
+    height: 260px;
 }
 
 .footer p{
-    margin-left: 15px;
+    margin-left: 30px;
 /*     padding: 5px; */
     font-size: 13px;
     color:#000000;
 }
 
 .footer a{
-    margin-left: 15px;
+    margin-left: 30px;
 /*     padding: 5px; */
     font-size: 13px;
     text-decoration: none;
@@ -382,7 +382,7 @@ ul li a{
 
 a:hover{
   text-decoration:underline;
-  text-decoration-color: #6ad1e3;
+  text-decoration-color: #ffce0a;
   color: #6ad1e3;
 }
 
@@ -445,5 +445,3 @@ ol li a{
 }
 
 /* catgeory ends */
-
-
