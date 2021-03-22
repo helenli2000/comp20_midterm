@@ -113,7 +113,7 @@ font-size: 12px;
   text-align: center;
 }
 
-.title-message p{
+.title-message h2{
   color: #222;
   font-family: 'brandon-grotesque','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-style: normal;
@@ -183,7 +183,7 @@ ul li a{
 }
 
 a:hover{
-  text-decoration:underline;
+  text-decoration: none;
   text-decoration-color: #6ad1e3;
   color: #6ad1e3;
 }
@@ -238,6 +238,7 @@ ol li a{
 }
 
 .item-info button:hover{
+  text-decoration: none;
   opacity:1;
 }
 

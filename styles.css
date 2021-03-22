@@ -311,7 +311,7 @@ font-size: 12px;
   text-align: center;
 }
 
-.title-message p{
+.title-message h2{
   color: #222;
   font-family: 'brandon-grotesque','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-style: normal;
@@ -381,8 +381,7 @@ ul li a{
 }
 
 a:hover{
-  text-decoration:underline;
-  text-decoration-color: #ffce0a;
+  text-decoration:none;
   color: #6ad1e3;
 }
 
@@ -433,10 +432,6 @@ ol li a{
   -ms-transform: translate(-50%, -50%);
   background-color: #6ad1e3;
   opacity:0;
-}
-
-.item-info button:hover{
-  opacity:1;
 }
 
 .product-name b{
