@@ -5,6 +5,7 @@
   <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
   <title>Category-Pies</title>
   <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -42,6 +43,11 @@
       indulgent Dark Chocolate Sea Salt Cookies.</p>
   </div>
   <div class="line"></div>
+  <div id="shop-with-us" style="width:400px;height:100px;display:none;background-color:#6ad1e3; text-align:center; margin: 15px auto;">
+    <br>
+    <p>Like this item? Make a purchase on the Contact Us Page!</p>
+    <p>Use promo code "baeklicious" for 15% off your order!</p>
+  </div>
   <div class="category-block">
     <div class="category-filters">
       <nav aria-label="category-navigation">
@@ -62,13 +68,9 @@
       </nav>
     </div>
     <div class="category-content">
-      <div id="shop-with-us" style="width:200px; height:200px; display:none; background-color:blue;">
-        <p>Like this item? Make a purchase on the Contact Us Page!</p>
-        <p>Use promo code "baeklicious" for 15% off your order!</p>
-      <div>
       <ol class="product-lists">
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie1.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -77,7 +79,7 @@
           </a>
         </li>
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie2.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -86,7 +88,7 @@
           </a>
         </li>
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie3.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -95,7 +97,7 @@
           </a>
         </li>
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie4.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -104,7 +106,7 @@
           </a>
         </li>
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie5.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 7%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -113,7 +115,7 @@
           </a>
         </li>
         <li class="product-item">
-          <a href="">
+          <a>
             <div class="item-info">
                 <img src="pie6.png" style="display: inline-block;height:85%; width:85%;">
               <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
@@ -137,9 +139,10 @@
   </footer>
 
 </body>
-<script src='jquery-3.2.1.min.js'>
-  $document.ready(function(){$(".item-info").click(function(){
-    $("#shop-with-us").fadeIn("slow);
+<script>
+  $(document).ready(function(){
+      $(".item-info").click(function(){
+        $("#shop-with-us").fadeIn("slow");
     });
   });
 </script>     

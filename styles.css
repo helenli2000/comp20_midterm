@@ -412,6 +412,7 @@ a {font-family:times; font-size: 2em; color:#ff0000; text-decoration:none}
 .promotional-banner{
   display: block;
   width:100%;
+  margin: 15px 0px;
 }
 
 .promo_row{
