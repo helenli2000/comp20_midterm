@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
+  <title>Category-Pies</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="header">
+        <a href="index.html"><img src="logo3.png" alt="Logo" class="main-logo"></a>
+        <span style="width: 100%;text-align: center">Bakelicious</span>
+    </div>
+
+  <div class="navbar">
+        <a class="nav" href="cakes.html"><img src="cake.png" alt="cake" class="nav-bar-icon"/> Cakes</a>
+        <a class="nav" href="cupcakes.html"><img src="cupcake.png" alt="cupcake" class="nav-bar-icon"/> Cupcakes</a>
+        <a class="nav" href="pies.html"><img src="pie.png" alt="pie" class="nav-bar-icon"/> Pies</a>
+        <a class="nav" href="cookies.html"><img src="cookie.png" alt="cookie" class="nav-bar-icon"/> Cookies</a>
+        <a class="nav" href="contact.html"><img src="contact.png" alt="contact" class="nav-bar-icon"/> Contact</a>
+        <a class="nav" href="blog.html"><img src="blog2.png" alt="blog" class="nav-bar-icon"/> Blog</a>
+  </div>
+
+  <div class="promotional-banner">
+    <div class="promo_row">
+        <p><b>FREE SURPRISE CANDY SAMPLES!</b></p>
+    </div>
+      <div class="firstcolumn">
+        <p>SPEND $50 & GET 3: <b>SWEET SURPRISE</b></p>
+      </div>
+      <div class="secondcolumn">
+        <p>SPEND $100 & GET 8: <b>BONUS SURPRISE</b></p>
+      </div>
+  </div>
+  <div class="page-title">
+    <h1>BESTSELLING CAKES & SWEETS</h1>
+  </div>
+  <div class="title-message">
+    <p>Shop our trend-setters, fan favorites & most craveable candies—from
+      insta-worthy Champagne Cakes to lip-smacking Sugar Cupcakes and
+      indulgent Dark Chocolate Sea Salt Cookies.</p>
+  </div>
+  <div class="line"></div>
+  <div class="category-block">
+    <div class="category-filters">
+      <nav aria-label="category-navigation">
+        <ul class="category-list">
+          <div class="category-title">
+            <b>COLLECTIONS</b>
+          </div>
+          <li class="category-items">
+            <a class="category-link" href=""
+            title="New Arrivals">New Arrivals</a>
+          </li>
+          <li class="category-items">
+            <a class="category-link" href=""
+            title="Best Sellers">Best Sellers</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="category-content">
+      <div id="shop-with-us" style="width:200px; height:200px; display:none; background-color:blue;">
+        <p>Like this item? Make a purchase on the Contact Us Page!</p>
+        <p>Use promo code "baeklicious" for 15% off your order!</p>
+      <div>
+      <ol class="product-lists">
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie1.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Ultra Cream Cake</b>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie2.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Calamondin & Calamansi</b>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie3.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Framboise Cake</b>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie4.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Teatime & Life</b>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie5.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 7%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Blue Monday</b>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="">
+            <div class="item-info">
+                <img src="pie6.png" style="display: inline-block;height:85%; width:85%;">
+              <b style="padding-left: 5%;text-align: center; text-decoration: none; text-transform: capitalize;">
+                Walnut & Tree</b>
+            </div>
+          </a>
+        </li>
+      </ol>
+    </div>
+   
+  </div>
+
+  <footer class="footer">
+          <p>The Bakery</p>
+          <p>~CONTACT US~</p>
+          <p>@ HARVARD SQUARE</p>
+          <P>3 BRATTLE STREET</P>
+          <P>CAMBRIDGE, MA 02138</P><br>
+          <a href="tel:8573218430">(857)-321-8430</a><br><br>
+          <a href= "mailto:HELP@MILKBARSTORE.COM">HELP@MILKBARSTORE.COM</a>
+  </footer>
+
+</body>
+<script src='jquery-3.2.1.min.js'>
+  $document.ready(function(){$(".item-info").click(function(){
+    $("#shop-with-us").fadeIn("slow);
+    });
+  });
+</script>     
+</html>
