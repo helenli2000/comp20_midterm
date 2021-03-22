@@ -1,231 +1,210 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bakelicious</title>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Welcome to the Slice</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
+	<style>
+	
+		.parallax {
+			background-image: url("birthdayHighCake.jpg");
+			height: 500px; 			
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.centered {
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			color:#ffffff;
+			transform: translate(-50%, -50%);
+			border-color: #ffffff;
+			border-style: solid;
+			/* border-width: thick; */
+		}
+		
+		.image_parent {
+			height: 300px; 
+			max-width: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 10%;
+		}
+		
+		.image_parent:hover{
+		  -ms-transform: scale(1.05); /* IE 9 */
+		  -webkit-transform: scale(1.05); /* Safari 3-8 */
+		  transform: scale(1.05); 
+		}
+		
+		.card {
+			align-self: auto;
+			flex-grow: 4;
+			width: 45%;
+			padding: 10px;
+			display: inline-block;
+			margin: auto;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			border-radius: 10%;
+		}
+		
+		.cardContainer{
+			width: 100%;
+			align-items: flex-start;
+			justify-content: center;
+			display:flex;
+			flex-wrap: wrap;
+		}
+		
+		.intro{
+			width:40%;
+			margin:auto;
+		}
+		
+		@media only screen and (max-device-width: 991px) {
+			.card {
+				width: 100%;
+			}
+			.intro{
+				width:80%;
+			}
+			.parallax {
+				height: 400px; 
+				background-attachment: scroll;
+			}
+			.centered {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				color:#000000;
+				opacity: 0;
+			}
+		}
+        
+        body, a { 
+         	width: 100%; 
+         	padding-top:6.5vw;
+         	color: black;
+          	font-family: 'Roboto Slab', serif;
+        }
 
-    <!-- Js -->
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/jquery.counterup.js"></script>
+        @media only screen and (max-device-width: 991px) {
+          body { 
+            font-family: Helvetica, Arial, Sans-Serif; 
+          }
+        }
 
-    <script src="js/main.js"></script>
+	</style>
 </head>
+
+
 <body>
-    
-    <div class="header">
-       <a href="index.html"><img src="logo3.png" alt="Logo" class="main-logo"></a>
-       <span style="width: 100%;text-align: center">Bakelicious</span>
-   </div>
+	
+	<div class="header">
+	   <a href="index.html"><img src="greenname.png" alt="Logo" class="main-logo"></a>
+	</div>
 
-   <div class="navbar">
-       <a class="nav" href="cakes.html"><img src="cake.png" alt="cake" class="nav-bar-icon"/> Cakes</a>
-       <a class="nav" href="cupcakes.html"><img src="cupcake.png" alt="cupcake" class="nav-bar-icon"/> Cupcakes</a>
-       <a class="nav" href="pies.html"><img src="pie.png" alt="pie" class="nav-bar-icon"/> Pies</a>
-       <a class="nav" href="cookies.html"><img src="cookie.png" alt="cookie" class="nav-bar-icon"/> Cookies</a>
-       <a class="nav" href="contact.html"><img src="contact.png" alt="contact" class="nav-bar-icon"/> Contact</a>
-       <a class="nav" href="blog.html"><img src="blog2.png" alt="blog" class="nav-bar-icon"/> Blog</a>
-   </div>
-    
-    <br><br>
+	<div class="navbar">
+	   <a class="nav" href="cakes.html"><img src="cake.png" alt="cake" class="nav-bar-icon"/> Cakes</a>
+	   <a class="nav" href="cupcakes.html"><img src="cupcake.png" alt="cupcake" class="nav-bar-icon"/> Cupcakes</a>
+	   <a class="nav" href="pies.html"><img src="pie.png" alt="pie" class="nav-bar-icon"/> Pies</a>
+	   <a class="nav" href="cookies.html"><img src="cookie.png" alt="cookie" class="nav-bar-icon"/> Cookies</a>
+	   <a class="nav" href="contact.html"><img src="contact.png" alt="contact" class="nav-bar-icon"/> Contact</a>
+	   <a class="nav" href="blog.html"><img src="blog2.png" alt="blog" class="nav-bar-icon"/> Blog</a>
+	</div>
+	
+	<div class="parallax"></div>
+	
+	<div class="centered">
+		<img src="slicename.png" alt="LogoTransparent" width="380">
+	</div>
+	
+	<br><br><br><br><br>
+	
+	<div class = "container" style = "text-align: center;">
+		<h1>Welcome to the Family</h1>
+		<p class = "intro">Sometimes, a slice is all it takes.<br><br>
+			A slice of kindness.<br>
+			A slice of patience.<br>
+			A slice of empathy.<br><br>
+			Here at <i>The Slice</i>,
+			we strive to bring a slice of happiness to all of our customers.
+			Our homemade goodies will light up your day and help you blaze
+			through any challenges that comes in your way.<br><br>
+			Desserts are for the soul. Treat yourself. :)
+			</p>
+	</div>
+	
+	<br><br><br><br><br>
+	
+	<div class = "container">
+		<div class="card">
+			<a href="cakes.html"><div class="image_parent" style="background-image: url('singlemilkcakebox.jpg');"></div></a>
+			<h2> Shop cakes </h2>
+			<p> Click me to learn more about us. We've also got a good story
+				to tell about our founder, Bruce the shark...</p>
+		</div>
+		
+		<div class="card">
+			<a href="pies.html"><div class="image_parent" style="background-image: url('piewhole.jpg');"></div></a>
+			<h2> Shop pies </h2>
+			<p> Click the image above to check out our featuring flavors and the stories
+				behind each flavor...</p>
+		</div>
+		
+		<div class="card">
+			<a href="cupcakes.html"><div class="image_parent" style="background-image: url('unicorncupcake.jpg');"></div></a>
+			<h2> Shop cupcakes </h2>
+			<p> Having a hard time deciding what to order? We can help you find your best match 
+				based on your preferences! We also appreciate flaver ideas from our customers!
+			</p>
+		</div>
 
-    <!-- cupcake intro banner -->
-    <section class="category-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                <div class="section-title">
-                  <h1>A Slice A Day Keeps the Bad Vibes Away</h1>
-                  <p>We are a team of fun people who love to bake! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <!-- About Us Start -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-            <div class="block">
-              <div class="section-title">
-                <h2>a little about us</h2>
-                <p> It all goes back to the good old 1950s. </p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- About Us Ends -->
-    
-    
-    
-    <!-- cakes intro -->
-    <section class="category-intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <img src="vintage_velvetCake.jpg" alt="Img"> <!-- change the image here-->
-                </div>
-            </div><!-- .col-md-7 close -->
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                <div class="section-title">
-                  <h2>A Slice A Day Keeps the Bad Vibes Away</h2>
-                  <p>We are a team of fun people who love to bake! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
-                <a class="btn btn-default btn-explore" href="cakes.html" >Shop Cakes</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <!-- cupcake intro banner -->
-    <section class="category-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                <div class="section-title">
-                  <h2>A Slice of Cake A Day Keeps the Bad Vibes Away</h2>
-                  <p>We are a team of fun people who love to bake! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
-                <a class="btn btn-default btn-explore" href="cupcakes.html" >Shop Cupcakes</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <section class="category-intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <img src="vintagepie.jpg" alt="Img"> <!-- change the image here-->
-                </div>
-            </div><!-- .col-md-7 close -->
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                <div class="section-title">
-                  <h2>Being rational is hard. <br> Have a pie.</h2>
-                  <p>We are a team of fun people who love to bake! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
-                <a class="btn btn-default btn-explore" href="pies.html" >Shop pies</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <br>
-    <!-- cookie intro banner -->
-    <section class="category-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="block">
-                <div class="section-title">
-                  <h2>A Slice of Cake A Day Keeps the Bad Vibes Away</h2>
-                  <p>We are a team of fun people who love to bake! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                </div>
-                <a class="btn btn-default btn-explore" href="cookies.html" >Shop cookies</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <br><br><br>
-    
-    <section id="call-to-action">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="block">
-                <h2>We hope you bring you the sweetest journey.</h2>
-                <p>If you have any suggestions or comments for our treats, shoot us a message! We'd love to hear your story. </p>
-                <a class="btn btn-default btn-call-to-action" href="#" >Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <br><br>
-    
-    <section id="clients-logo-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <div id="clients-logo" class="owl-carousel">
-                  <div class="clients-logo-img">
-                    <img src="piechunk.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="singlemilkcake.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="piewhole.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="piechunk.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="birthdaybundle.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="singlemilkcake.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="piewhole.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="piechunk.jpg" alt="Features">
-                  </div>
-                  <div class="clients-logo-img">
-                    <img src="birthdaybundle.jpg" alt="Features">
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <br><br>
-    
-    <!-- footer starts -->
-    <footer class="footer">
-       <p>The Bakery</p>
-       <p>~CONTACT US~</p>
-       <p>@ HARVARD SQUARE</p>
-       <P>3 BRATTLE STREET</P>
-       <P>CAMBRIDGE, MA 02138</P><br>
-       <a href="tel:8573218430">(857)-321-8430</a><br><br>
-       <a href= "mailto:HELP@MILKBARSTORE.COM">HELP@MILKBARSTORE.COM</a>
-   </footer>
+		<div class="card">
+			<a href="cookies.html"><div class="image_parent" style="background-image: url('cookiebowl.jpg');"></div></a>
+			<h2> Shop cookies  </h2>
+			<p> Bruce's Juices has outlet branches throughout the world. 
+				Chances are, one of these branches is pretty close to you! Check 
+				out where we are located...</p>
+		</div>
+
+		<div class="card">
+			<a href="blog.html"><div class="image_parent" style="background-image: url('afternoontea.jpg');"></div></a>
+			<h2> Check out our blog </h2>
+			<p> We appreciate each and every one of our customers. That's why
+			we love having you guys reaching out to us...</p>
+		</div>
+		
+		<div class="card">
+			<a href="contact.html"><div class="image_parent" style="background-image: url('cakeshop.jpg');"></div></a>
+			<h2> Contact Us </h2>
+			<p> Here are just a few things you can do with Bruce's Juices! 
+				Don't be afraid to get creative!</p>
+		</div>
+		
+	</div>
+
 </body>
+<!-- footer starts -->
+<footer class="footer">
+   <br>
+   <p><b>The Slice</b></p>
+   <p>Harvard Square</p>
+   <p>3 Brattle Street</P>
+   <p>Cambridge, MA 02138</p><br>
+   <a href="tel:8573218430">(857)-321-8430</a><br>
+   <a href= "mailto:info@theslice.com">info@theslice.com</a>
+</footer>
 
-
-</html>
