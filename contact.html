@@ -241,25 +241,7 @@
     var cupcake = document.getElementsByName("cupcakeitems")[0];
     var pie = document.getElementsByName("pieitems")[0];
     var cookie = document.getElementsByName("cookieitems")[0];
-
-    cake.onchange = function(){
-      var value = cakeItems[cake.selectedIndex].cost;
-      document.getElementsByName("cakeprice")[0].value = parseInt(value);
-    }
-    cupcake.onchange = function(){
-      var value = cupcakeItems[cupcake.selectedIndex].cost;
-      document.getElementsByName("cupcakeprice")[0].value = parseInt(value);
-    }
-    pie.onchange = function(){
-      var value = pieItems[pie.selectedIndex].cost;
-      document.getElementsByName("pieprice")[0].value = parseInt(value);
-    }
-    cookie.onchange = function(){
-      var value = cookiesItems[cookie.selectedIndex].cost;
-      document.getElementsByName("cookiesprice")[0].value = parseInt(value);
-    }
-
-  	var e = document.getElementsByName("quan");
+    var e = document.getElementsByName("quan");
   	var output = document.getElementsByName("cost");
   	var s1 = document.getElementsByName("subtotal")[0];
   	var s2 = document.getElementsByName("tax")[0];
@@ -274,6 +256,35 @@
   		s2.value = (parseFloat(raw_sub) * 0.0625).toFixed(2);
   		s3.value = (parseFloat(s1.value) + parseFloat(s2.value)).toFixed(2);
   	}
+    cake.onchange = function(){
+      var value = cakeItems[cake.selectedIndex].cost;
+      document.getElementsByName("cakeprice")[0].value = parseInt(value);
+      var quantity = e[0].options[e[0].selectedIndex].value;
+  		output[0].value = (parseInt(value) * parseInt(quantity)).toFixed(2);
+  		updateSub();
+    }
+    cupcake.onchange = function(){
+      var value = cupcakeItems[cupcake.selectedIndex].cost;
+      document.getElementsByName("cupcakeprice")[0].value = parseInt(value);
+      var quantity = e[1].options[e[1].selectedIndex].value;
+  		output[1].value = (parseInt(value) * parseInt(quantity)).toFixed(2);
+  		updateSub();
+    }
+    pie.onchange = function(){
+      var value = pieItems[pie.selectedIndex].cost;
+      document.getElementsByName("pieprice")[0].value = parseInt(value);
+      var quantity = e[2].options[e[2].selectedIndex].value;
+  		output[2].value = (parseInt(value) * parseInt(quantity)).toFixed(2);
+  		updateSub();
+    }
+    cookie.onchange = function(){
+      var value = cookiesItems[cookie.selectedIndex].cost;
+      document.getElementsByName("cookiesprice")[0].value = parseInt(value);
+      var quantity = e[3].options[e[3].selectedIndex].value;
+  		output[3].value = (parseInt(value) * parseInt(quantity)).toFixed(2);
+  		updateSub();
+    }
+
   	e[0].onchange = function(){
   			var value = e[0].options[e[0].selectedIndex].value;
         var price = document.getElementsByName("cakeprice")[0].value;
