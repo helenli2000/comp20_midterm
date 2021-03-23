@@ -2,7 +2,109 @@
 <head>
   <meta charset="UTF-8">
   <title> Contact Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="keywords" content="cupcakes, cakes, cookies, pies, bakery">
+	<title>Welcome to the Slice</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+
+	<style>
+		.parallax {
+			background-image: url("birthdayHighCake.jpg");
+			height: 500px; 			
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.centered {
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			color:#ffffff;
+			transform: translate(-50%, -50%);
+			border-color: #ffffff;
+			border-style: solid;
+			/* border-width: thick; */
+		}
+		
+		.image_parent {
+			height: 300px; 
+			max-width: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 10%;
+		}
+		
+		.image_parent:hover{
+		  -ms-transform: scale(1.05); /* IE 9 */
+		  -webkit-transform: scale(1.05); /* Safari 3-8 */
+		  transform: scale(1.05); 
+		}
+		
+		.card {
+			align-self: auto;
+			flex-grow: 4;
+			width: 45%;
+			padding: 10px;
+			display: inline-block;
+			margin: auto;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			border-radius: 10%;
+		}
+		
+		.cardContainer{
+			width: 100%;
+			align-items: flex-start;
+			justify-content: center;
+			display:flex;
+			flex-wrap: wrap;
+		}
+		
+		.intro{
+			width:40%;
+			margin:auto;
+		}
+		
+		@media only screen and (max-device-width: 991px) {
+			.card {
+				width: 100%;
+			}
+			.intro{
+				width:80%;
+			}
+			.parallax {
+				height: 400px; 
+				background-attachment: scroll;
+			}
+			.centered {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				color:#000000;
+				opacity: 0;
+			}
+		}
+        
+        body, a { 
+         	width: 100%; 
+         	padding-top:6.5vw;
+         	color: black;
+          	font-family: 'Roboto Slab', serif;
+        }
+
+        @media only screen and (max-device-width: 991px) {
+          body { 
+            font-family: Helvetica, Arial, Sans-Serif; 
+          }
+        }
+	</style>
   <style type="text/css">
   .errMsg {color: #D20E11; border: solid 1px #d20e11; display:none;  padding: 1px 15px;	}
   
@@ -33,22 +135,21 @@
     background:#3498DB;
   }
   </style>
+  
 </head>
 
 <body>
   <div class="header">
-        <a href="index.html"><img src="logo3.png" alt="Logo" class="main-logo"></a>
-        <span style="width: 100%;text-align: center">Bakelicious</span>
-    </div>
-
-  <div class="navbar">
-        <a class="nav" href="cakes.html"><img src="cake.png" alt="cake" class="nav-bar-icon"/> Cakes</a>
-        <a class="nav" href="cupcakes.html"><img src="cupcake.png" alt="cupcake" class="nav-bar-icon"/> Cupcakes</a>
-        <a class="nav" href="pies.html"><img src="pie.png" alt="pie" class="nav-bar-icon"/> Pies</a>
-        <a class="nav" href="cookies.html"><img src="cookie.png" alt="cookie" class="nav-bar-icon"/> Cookies</a>
-        <a class="nav" href="contact.html"><img src="contact.png" alt="contact" class="nav-bar-icon"/> Contact</a>
-        <a class="nav" href="blog.html"><img src="blog2.png" alt="blog" class="nav-bar-icon"/> Blog</a>
-  </div>
+	   <a href="index.html"><img src="greenname.png" alt="Logo" class="main-logo"></a>
+	</div>
+	<div class="navbar">
+	   <a class="nav" href="cakes.html"><img src="cake.png" alt="cake" class="nav-bar-icon"/> Cakes</a>
+	   <a class="nav" href="cupcakes.html"><img src="cupcake.png" alt="cupcake" class="nav-bar-icon"/> Cupcakes</a>
+	   <a class="nav" href="pies.html"><img src="pie.png" alt="pie" class="nav-bar-icon"/> Pies</a>
+	   <a class="nav" href="cookies.html"><img src="cookie.png" alt="cookie" class="nav-bar-icon"/> Cookies</a>
+	   <a class="nav" href="contact.html"><img src="contact.png" alt="contact" class="nav-bar-icon"/> Contact</a>
+	   <a class="nav" href="blog.html"><img src="blog2.png" alt="blog" class="nav-bar-icon"/> Blog</a>
+	</div>
   <script language="javascript">
 
   function MenuItem(name, cost)
@@ -376,15 +477,15 @@
   </script>
 
 
-  <footer class="footer">
-          <p>The Bakery</p>
-          <p>~CONTACT US~</p>
-          <p>@ HARVARD SQUARE</p>
-          <P>3 BRATTLE STREET</P>
-          <P>CAMBRIDGE, MA 02138</P><br>
-          <a href="tel:8573218430">(857)-321-8430</a><br><br>
-          <a href= "mailto:HELP@MILKBARSTORE.COM">HELP@MILKBARSTORE.COM</a>
-  </footer>
+<footer class="footer">
+   <br>
+   <p><b>The Slice</b></p>
+   <p>Harvard Square</p>
+   <p>3 Brattle Street</P>
+   <p>Cambridge, MA 02138</p><br>
+   <a href="tel:8573218430">(857)-321-8430</a><br>
+   <a href= "mailto:info@theslice.com">info@theslice.com</a>
+</footer>
 
 </body>
 </html>
