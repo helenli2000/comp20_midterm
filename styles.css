@@ -144,13 +144,8 @@ img :hover {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right:25px;
+  margin-right:20px;
 }
-.row{
-  width:1200px;
-  display: flex;
-  flex-wrap: wrap;
-  margin:0 auto;}
 
 .blog-image{
   position:relative;
@@ -174,7 +169,12 @@ img :hover {
   text-align: center;
 }
 
-
+.row {
+  width:1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+}
 
 .read-more{
   border:none;
@@ -439,5 +439,3 @@ ol li a{
   text-decoration: none;
   text-transform: capitalize;
 }
-
-/* catgeory ends */
