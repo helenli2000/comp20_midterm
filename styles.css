@@ -145,6 +145,10 @@ img :hover {
   padding-right: 15px;
   padding-left: 15px;
   margin-right:20px;
+  width:1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
 }
 
 .blog-image{
@@ -169,12 +173,7 @@ img :hover {
   text-align: center;
 }
 
-.row {
-  width:1200px;
-  display: flex;
-  flex-wrap: wrap;
-  margin:0 auto;
-}
+
 
 .read-more{
   border:none;
