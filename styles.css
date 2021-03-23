@@ -143,7 +143,6 @@ img :hover {
 .container{
   width: 100%;
   padding-right:15px;
-  margin-right:300px;
 }
 
 .blog-image{
@@ -172,8 +171,7 @@ img :hover {
   width:1200px;
   display: flex;
   flex-wrap: wrap;
-  margin:0 auto;
-  padding-right: 100px;
+  margin-left: 300px;
 }
 
 .read-more{
