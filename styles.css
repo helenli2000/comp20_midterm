@@ -144,6 +144,7 @@ img :hover {
   width: 100%;
   padding:auto;
   margin-right: 300px;
+  width:1000px;
 }
 
 .blog-image{
@@ -169,7 +170,6 @@ img :hover {
 }
 
 .row {
-  width:1000px;
   display: flex;
   flex-wrap: wrap;
 }
